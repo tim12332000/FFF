@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using System;
+using UnityEngine.Events;
 
 public class CharMovment : MonoBehaviour
 {
+	public UnityEvent OnJumpEvent;
+
+	public float RotaDuration = 0.3f;
+	public float RotaionMax = 90f;
 	public float MaxMove = 3f;
 
 	public float Speed = 1f;
@@ -24,6 +29,10 @@ public class CharMovment : MonoBehaviour
 	private float _timer;
 	private bool _inJump;
 
+	private Quaternion _leftQ;
+	private Quaternion _rightQ;
+	private Tween _rotaionTw;
+
 	// Update is called once per frame
 	void Update()
 	{
@@ -32,6 +41,7 @@ public class CharMovment : MonoBehaviour
 			_inJump = true;
 			_timer = 0f;
 			_jumpStartY = transform.position.y;
+			OnJumpEvent.Invoke();
 		}
 
 		if (_inJump)
@@ -56,10 +66,24 @@ public class CharMovment : MonoBehaviour
 		{
 			Right();
 		}
+
+		if (Input.GetKeyUp(LeftKey) || Input.GetKeyUp(RightKey))
+		{
+			ClearTweenAndRebackRotaion();
+		}
 	}
 
 	public void Left()
 	{
+		if (_rotaionTw == null)
+		{
+			_rotaionTw = gameObject.transform.DORotate(new Vector3(0, 0, RotaionMax), RotaDuration)
+				.OnComplete(() =>
+				{
+					ClearTweenAndRebackRotaion();
+				});
+		}
+
 		float movePos = transform.position.x - Time.deltaTime * Speed;
 		if (movePos < -MaxMove)
 		{
@@ -71,6 +95,15 @@ public class CharMovment : MonoBehaviour
 
 	private void Right()
 	{
+		if (_rotaionTw == null)
+		{
+			_rotaionTw = gameObject.transform.DORotate(new Vector3(0, 0, -RotaionMax), RotaDuration)
+				.OnComplete(() =>
+				{
+					ClearTweenAndRebackRotaion();
+				});
+		}
+
 		float movePos = transform.position.x + Time.deltaTime * Speed;
 		if (movePos > MaxMove)
 		{
@@ -78,6 +111,13 @@ public class CharMovment : MonoBehaviour
 		}
 
 		transform.position = new Vector3(movePos, transform.position.y, transform.position.z);
+	}
+
+	private void ClearTweenAndRebackRotaion()
+	{
+		_rotaionTw.Kill();
+		_rotaionTw = null;
+		gameObject.transform.DORotate(Vector3.zero, 0.1f);
 	}
 
 	public void RightStop()
@@ -92,6 +132,8 @@ public class CharMovment : MonoBehaviour
 
 	private void Awake()
 	{
+		_leftQ = Quaternion.Euler(new Vector3(0f, 0f, RotaionMax));
+		_rightQ = Quaternion.Euler(new Vector3(0f, 0f, -RotaionMax));
 	}
 }
 

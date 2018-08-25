@@ -14,7 +14,7 @@ public class GameUIValue : SingletonMono<GameUIValue>
         }
         set
         {
-            if (value < 0)
+            if (value < 0 || value > 3)
             {
                 return;
             }
@@ -77,6 +77,7 @@ public class GameUIValue : SingletonMono<GameUIValue>
 
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.U))
         {
             Life--;
@@ -89,5 +90,6 @@ public class GameUIValue : SingletonMono<GameUIValue>
         {
             Far += 100;
         }
+        */
     }
 }

@@ -18,15 +18,16 @@ public class GameUIValue : SingletonMono<GameUIValue>
 
             for (int i = 0; i < ImagesLife.Length; i++)
             {
-                ImagesLife[i].color = Color.clear;
+                ImagesLife[i].sprite = SpritesLife[0];
             }
             for (int i = 0; i < life; i++)
             {
-                ImagesLife[i].color = Color.white;
+                ImagesLife[i].sprite = SpritesLife[1];
             }
         }
     }
     public Image[] ImagesLife;
+    public Sprite[] SpritesLife;
     //============================================================
     private int time = 0;
     public int Time
@@ -57,7 +58,6 @@ public class GameUIValue : SingletonMono<GameUIValue>
         }
     }
     public Text TextFar = null;
-    //============================================================
 
     void Awake()
     {
@@ -67,6 +67,16 @@ public class GameUIValue : SingletonMono<GameUIValue>
     }
 
     void Start()
+    {
+
+    }
+
+    public void ShowTime(int times)
+    {
+
+    }
+
+    public void ShowFar(int fars)
     {
 
     }

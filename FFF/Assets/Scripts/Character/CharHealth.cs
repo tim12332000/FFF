@@ -1,11 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.Events;
 
 public class CharHealth : MonoBehaviour
 {
 	public event Action OnHpZero = delegate { };
+	public UnityEvent OnDamage;
+	public UnityEvent OnHeal;
 
+	public int HpMax = 3;
+
+	[SerializeField]
 	private int _hp;
 	public int Hp
 	{
@@ -19,11 +25,47 @@ public class CharHealth : MonoBehaviour
 		}
 	}
 
-	public void TakeDamage(int damge)
+	[ContextMenu("TestDmage")]
+	public void TestDmage()
 	{
+		TakeDamage(1);
+	}
+	[ContextMenu("TestHeal")]
+	public void TestHeal()
+	{
+		TakeHeal(1);
+	}
+
+	public void TakeDamage(int damage)
+	{
+		_hp -= damage;
+
+		if (_hp < 0)
+		{
+			_hp = 0;
+			OnHpZero();
+		}
+
+		GameUIValue.Instance.Life = _hp;
+
+		OnDamage.Invoke();
 	}
 
 	public void TakeHeal(int heal)
 	{
+		_hp += heal;
+		if (_hp >= HpMax)
+		{
+			_hp = HpMax;
+		}
+
+		GameUIValue.Instance.Life = _hp;
+
+		OnHeal.Invoke();
+	}
+
+	private void Awake()
+	{
+		_hp = HpMax;
 	}
 }

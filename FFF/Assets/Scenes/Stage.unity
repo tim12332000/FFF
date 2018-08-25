@@ -715,7 +715,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: -25
         - useVariable: 1
           name: 
           tooltip: 
@@ -740,9 +740,9 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
+        - useVariable: 1
+          name: Ground/Start.z
+          tooltip: Setting by Scroller at init
           showInInspector: 0
           networkSync: 0
           value: 0
@@ -775,7 +775,7 @@ MonoBehaviour:
         - 
         - Out of Screen
         - 
-        byteData: 0000000001010000000000000101
+        byteData: 0000000001010001000000000101
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -813,8 +813,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 250
-        y: 165
+        x: 259
+        y: 171
         width: 100
         height: 32
       isBreakpoint: 0
@@ -893,7 +893,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 000000000000
+        byteData: 000000000001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -1690,7 +1690,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: -5
+        value: -15
       - useVariable: 1
         name: spwn.z
         tooltip: 
@@ -1703,7 +1703,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 10
+        value: 12
       boolVariables: []
       stringVariables: []
       vector2Variables: []

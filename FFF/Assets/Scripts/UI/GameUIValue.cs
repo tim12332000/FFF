@@ -70,14 +70,4 @@ public class GameUIValue : SingletonMono<GameUIValue>
     {
 
     }
-
-    public void ShowTime(int times)
-    {
-
-    }
-
-    public void ShowFar(int fars)
-    {
-
-    }
 }

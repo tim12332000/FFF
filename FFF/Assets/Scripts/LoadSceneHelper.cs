@@ -48,7 +48,7 @@ public class LoadSceneHelper : MonoBehaviour
 			Debug.LogFormat("[LoadSceneHelper][OnLoadone]");
 			_loadSecneTask.Dispose();
 			_loadSecneTask = null;
-			OnLoadAllDone();
+			OnLoadAllDone.Invoke();
 		}
 	}
 

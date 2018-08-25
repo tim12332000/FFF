@@ -87,7 +87,7 @@ public class CharMovment : MonoBehaviour
 			_rotaionTw = gameObject.transform.DORotate(new Vector3(0, 0, RotaionMax), RotaDuration)
 				.OnComplete(() =>
 				{
-					ClearTweenAndRebackRotaion();
+					gameObject.transform.rotation = _leftQ;
 				});
 		}
 
@@ -107,7 +107,7 @@ public class CharMovment : MonoBehaviour
 			_rotaionTw = gameObject.transform.DORotate(new Vector3(0, 0, -RotaionMax), RotaDuration)
 				.OnComplete(() =>
 				{
-					ClearTweenAndRebackRotaion();
+					gameObject.transform.rotation = _rightQ;
 				});
 		}
 

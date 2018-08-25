@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using Gameplay.Utility;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class LoadSceneHelper : MonoBehaviour
 {
 	public List<string> SceneNames = new List<string>();
 
-	public static event Action OnLoadAllDone;
+	public static UnityEvent OnLoadAllDone;
 
 	private List<AsyncOperation> _loadScenes = new List<AsyncOperation>();
 

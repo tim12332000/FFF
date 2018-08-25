@@ -332,6 +332,11 @@ Prefab:
       propertyPath: OnJumpEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8300000, guid: 5f9fa69f568094b5e93089ea6234fb3e, type: 3}
+    - target: {fileID: 114476298756947200, guid: c4e2570473f774b6d8c6982f6c9dbbf2,
+        type: 2}
+      propertyPath: HpMax
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 23446194720486086, guid: c4e2570473f774b6d8c6982f6c9dbbf2, type: 2}
     - {fileID: 33241081970542320, guid: c4e2570473f774b6d8c6982f6c9dbbf2, type: 2}

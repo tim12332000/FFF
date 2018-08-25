@@ -33,6 +33,11 @@ public class CharMovment : MonoBehaviour
 	private Quaternion _rightQ;
 	private Tween _rotaionTw;
 
+	[SerializeField]
+	private GameObject _running;
+	[SerializeField]
+	private GameObject _jumping;
+
 	// Update is called once per frame
 	void Update()
 	{
@@ -42,6 +47,7 @@ public class CharMovment : MonoBehaviour
 			_timer = 0f;
 			_jumpStartY = transform.position.y;
 			OnJumpEvent.Invoke();
+			ChangeToJump();
 		}
 
 		if (_inJump)
@@ -55,6 +61,7 @@ public class CharMovment : MonoBehaviour
 		{
 			transform.position = new Vector3(transform.position.x, 0.1f, transform.position.z);
 			_inJump = false;
+			ChangeToRunning();
 		}
 
 		if (Input.GetKey(LeftKey))
@@ -128,6 +135,18 @@ public class CharMovment : MonoBehaviour
 	public void LeftStop()
 	{
 
+	}
+
+	private void ChangeToJump()
+	{
+		_jumping.SetActive(true);
+		_running.SetActive(false);
+	}
+
+	private void ChangeToRunning()
+	{
+		_jumping.SetActive(false);
+		_running.SetActive(true);
 	}
 
 	private void Awake()

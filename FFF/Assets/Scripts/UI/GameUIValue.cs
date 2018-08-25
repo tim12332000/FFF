@@ -14,8 +14,12 @@ public class GameUIValue : SingletonMono<GameUIValue>
         }
         set
         {
-            life = value;
+            if (value < 0)
+            {
+                return;
+            }
 
+            life = value;
             for (int i = 0; i < ImagesLife.Length; i++)
             {
                 ImagesLife[i].sprite = SpritesLife[0];
@@ -29,23 +33,23 @@ public class GameUIValue : SingletonMono<GameUIValue>
     public Image[] ImagesLife;
     public Sprite[] SpritesLife;
     //============================================================
-    private int time = 0;
-    public int Time
+    private float speed = 0;
+    public float Speed
     {
         get
         {
-            return time;
+            return speed;
         }
         set
         {
-            time = value;
-            TextTime.text = time.ToString();
+            speed = value;
+            TextSpeed.text = speed.ToString();
         }
     }
-    public Text TextTime = null;
+    public Text TextSpeed = null;
     //============================================================
-    private int far = 0;
-    public int Far
+    private float far = 0;
+    public float Far
     {
         get
         {
@@ -62,12 +66,28 @@ public class GameUIValue : SingletonMono<GameUIValue>
     void Awake()
     {
         Life = 3;
-        Time = 0;
+        Speed = 0;
         Far = 0;
     }
 
     void Start()
     {
 
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            Life--;
+        }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            Speed += 100;
+        }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            Far += 100;
+        }
     }
 }

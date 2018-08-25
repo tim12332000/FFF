@@ -22,7 +22,6 @@ public class CharMovment : MonoBehaviour
 
 	private Tween _tween;
 
-	bool _isInJump;
 	bool _isMoveLeftOrRight;
 	private bool _controling;
 	private float _jumpStartY;
@@ -32,6 +31,7 @@ public class CharMovment : MonoBehaviour
 	private Quaternion _leftQ;
 	private Quaternion _rightQ;
 	private Tween _rotaionTw;
+	private float _ogY;
 
 	[SerializeField]
 	private GameObject _running;
@@ -57,7 +57,7 @@ public class CharMovment : MonoBehaviour
 			transform.position = new Vector3(transform.position.x, (float)s, transform.position.z);
 		}
 
-		if (_inJump && transform.position.y < 0f)
+		if (_inJump && transform.position.y < _ogY + 0.1f)
 		{
 			transform.position = new Vector3(transform.position.x, 0.1f, transform.position.z);
 			_inJump = false;
@@ -139,12 +139,24 @@ public class CharMovment : MonoBehaviour
 
 	private void ChangeToJump()
 	{
+		if (_jumping == null)
+			return;
+
+		if (_running == null)
+			return;
+
 		_jumping.SetActive(true);
 		_running.SetActive(false);
 	}
 
 	private void ChangeToRunning()
 	{
+		if (_jumping == null)
+			return;
+
+		if (_running == null)
+			return;
+
 		_jumping.SetActive(false);
 		_running.SetActive(true);
 	}
@@ -153,6 +165,7 @@ public class CharMovment : MonoBehaviour
 	{
 		_leftQ = Quaternion.Euler(new Vector3(0f, 0f, RotaionMax));
 		_rightQ = Quaternion.Euler(new Vector3(0f, 0f, -RotaionMax));
+		_ogY = transform.position.y;
 	}
 }
 

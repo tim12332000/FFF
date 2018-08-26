@@ -24,6 +24,7 @@ public class GameUIState : MonoBehaviour
     //===========================================================
     public GameObject WinGroup = null;
     public GameObject GameObjectButtonWinRestart = null;
+    public Image ImageClear = null;
     public Text TextWin = null;
     public Image ImageButtonWinRestart = null;
     public Text TextButtonWinRestart = null;
@@ -147,6 +148,8 @@ public class GameUIState : MonoBehaviour
         TextButtonWinRestart.DOFade(1, 0.5f);
         ImageButtonWinRestart.color = new Color(1, 1, 1, 0);
         ImageButtonWinRestart.DOFade(1, 0.5f);
+        ImageClear.color = new Color(1, 1, 1, 0);
+        ImageClear.DOFade(1, 0.5f);
 
         PlayBGM(3);
     }

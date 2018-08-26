@@ -232,6 +232,8 @@ MonoBehaviour:
     BlendXTo: 5
     BlendYTo: 0.6
     DurationTime: 0.2
+  IsEnterGame: 0
+  GameWinS: 3000
   OrignalSpd: -20
   AddSpeedofTime: 1
 --- !u!114 &458987036
@@ -261,6 +263,11 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   GameOver:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  GameWin:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,

@@ -297,6 +297,16 @@ Prefab:
       propertyPath: OnHeal.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8300000, guid: b8730cddff30447158e818c07084b46f, type: 3}
+    - target: {fileID: 65422698764935560, guid: c4e2570473f774b6d8c6982f6c9dbbf2,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114476298756947200, guid: c4e2570473f774b6d8c6982f6c9dbbf2,
+        type: 2}
+      propertyPath: HpMax
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4e2570473f774b6d8c6982f6c9dbbf2, type: 2}
   m_IsPrefabParent: 0

@@ -19,7 +19,6 @@ public class GameUIValue : SingletonMono<GameUIValue>
                 return;
             }
 
-            Debug.Log(ImagesLife);
             life = value;
             for (int i = 0; i < ImagesLife.Length; i++)
             {
@@ -75,7 +74,7 @@ public class GameUIValue : SingletonMono<GameUIValue>
     {
 
     }
-
+    
     void Update()
     {
         /*
@@ -113,5 +112,6 @@ public class GameUIValue : SingletonMono<GameUIValue>
 
         float nowPoint = progressTotal * percent;
         RectTransformGirl.anchoredPosition = Vector2.right * (-540 + nowPoint) + Vector2.up * 75;
+
     }
 }

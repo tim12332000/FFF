@@ -131,9 +131,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1825976612073780}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.58}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.38, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4088761193574352}
   m_RootOrder: 2
@@ -309,6 +309,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharMovment: {fileID: 114674087395876374}
   CharHealth: {fileID: 114476298756947200}
+  RunningAnim: {fileID: 95340981198743018}
+  _animSpeed: 0
 --- !u!114 &114476298756947200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -332,6 +334,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   HpMax: 3
   _hp: 0
+  IsInvincible: 0
 --- !u!114 &114674087395876374
 MonoBehaviour:
   m_ObjectHideFlags: 1

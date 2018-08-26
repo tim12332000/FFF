@@ -58,7 +58,7 @@ public class GameUIValue : SingletonMono<GameUIValue>
         set
         {
             far = value;
-            TextFar.text = far.ToString();
+            TextFar.text = far.ToString()+"/M";
         }
     }
     public Text TextFar = null;

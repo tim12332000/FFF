@@ -136,7 +136,7 @@ public class StageManager : MonoBehaviour
 				 {
 					 DOTween.To(GetBlendX, SetBlendX, se.BlendXTo, se.DurationTime);
 					 DOTween.To(GetBlendY, SetBlendY, se.BlendYTo, se.DurationTime);
-				 }, se.TriggerTime * 1);
+				 }, se.TriggerTime + lastTime * i);
 			}
 		}
 

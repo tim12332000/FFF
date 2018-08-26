@@ -371,6 +371,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!4 &118014562 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f,
+    type: 2}
+  m_PrefabInternal: {fileID: 520900270}
 --- !u!1001 &154284537
 Prefab:
   m_ObjectHideFlags: 0
@@ -1191,6 +1196,52 @@ Transform:
   m_PrefabParentObject: {fileID: 4263596462876622, guid: d2200735220f9c843b15c4c37b2a0bb7,
     type: 2}
   m_PrefabInternal: {fileID: 214693642}
+--- !u!1001 &520900270
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1040300879}
+    m_Modifications:
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181833714025854, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_Name
+      value: U7 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &532867633 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4881748253345840, guid: 4c8df370166c7d64289b7ad72522e026,
@@ -1973,7 +2024,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StageGround: {fileID: 642699265}
   CurvedWorldController: {fileID: 0}
-  _nowS: 0
   NewSpd: 0
   _stopUpdateSpd: 0
 --- !u!4 &730785688 stripped
@@ -1981,6 +2031,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4020829916360238, guid: 6df9cd729c314034893f3ebbb49252c9,
     type: 2}
   m_PrefabInternal: {fileID: 2024150448}
+--- !u!4 &752300872 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1216598476}
 --- !u!1 &848938641
 GameObject:
   m_ObjectHideFlags: 0
@@ -4948,6 +5003,8 @@ Transform:
   - {fileID: 1476041742}
   - {fileID: 532867633}
   - {fileID: 2093850448}
+  - {fileID: 118014562}
+  - {fileID: 752300872}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5065,6 +5122,52 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 61e209a232d01ac4b98376beb7a625ab, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1216598476
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1040300879}
+    m_Modifications:
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181833714025854, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_Name
+      value: U7 (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1226041097
 Prefab:
@@ -5744,7 +5847,7 @@ MonoBehaviour:
             typeName: UnityEngine.Object
             value: {fileID: 642699266}
           TargetTypeName: StageManager
-          PropertyName: _nowS
+          PropertyName: 
           BoolParameter:
             useVariable: 0
             name: 
@@ -5753,8 +5856,8 @@ MonoBehaviour:
             networkSync: 0
             value: 0
           FloatParameter:
-            useVariable: 1
-            name: DISTANCE
+            useVariable: 0
+            name: 
             tooltip: 
             showInInspector: 0
             networkSync: 0
@@ -5819,7 +5922,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            typeName: System.Single
+            typeName: 
             value: {fileID: 0}
           MaterialParameter:
             useVariable: 0

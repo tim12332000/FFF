@@ -2257,8 +2257,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 57
-        y: 186
+        x: 60
+        y: 187
         width: 115
         height: 32
       isBreakpoint: 0
@@ -2291,7 +2291,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 0}
+          value: {fileID: 941481734}
         - useVariable: 0
           name: 
           tooltip: 
@@ -2334,7 +2334,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 109.47122
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
@@ -2344,7 +2344,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 0, y: 0, z: 0}
+          value: {x: 0, y: 0, z: 90}
         - useVariable: 1
           name: 
           tooltip: 
@@ -2356,7 +2356,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 0, y: 0, z: 0}
+          value: {x: 0, y: 0, z: 90}
         - useVariable: 1
           name: 
           tooltip: 
@@ -2557,7 +2557,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101010101
-        actionIsOpen: 000000000000
+        actionIsOpen: 010000000000
         actionStartIndex: 000000000200000005000000080000000e00000013000000
         actionHashCodes: d97b72022ee017042ee01704dfd72a04bf83c900ea32a105
         unityObjectParams: []
@@ -2600,7 +2600,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 1040300877}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -2638,7 +2638,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 0.79907227
         - useVariable: 0
           name: 
           tooltip: 
@@ -2656,13 +2656,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: -0.1672144
         - useVariable: 1
           name: obj.offset.x
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 0.79907227
         - useVariable: 0
           name: 
           tooltip: 
@@ -2674,7 +2674,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: -0.1672144
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -3186,8 +3186,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 607.8203
-        y: 272.02344
+        x: 576.8203
+        y: 270.02344
         width: 151
         height: 32
       isBreakpoint: 0
@@ -3505,7 +3505,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 1040300877}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -3559,7 +3559,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 0.79907227
         - useVariable: 0
           name: 
           tooltip: 
@@ -3577,13 +3577,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: -0.1672144
         - useVariable: 1
           name: obj.offset.x
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 0.79907227
         - useVariable: 0
           name: 
           tooltip: 
@@ -3595,13 +3595,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: -0.1672144
         - useVariable: 1
           name: obj.offset.x
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 0.79907227
         - useVariable: 0
           name: 
           tooltip: 
@@ -3613,7 +3613,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: -0.1672144
         - useVariable: 0
           name: 
           tooltip: 
@@ -3932,7 +3932,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 0
+        value: 7
       boolVariables: []
       stringVariables: []
       vector2Variables: []
@@ -4007,7 +4007,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -4034,7 +4034,7 @@ MonoBehaviour:
     handleJointBreak2D: 0
     handleOnGUI: 0
     handleFixedUpdate: 0
-    handleLateUpdate: 1
+    handleLateUpdate: 0
     handleApplicationEvents: 0
     handleUiEvents: 0
     handleLegacyNetworking: 0

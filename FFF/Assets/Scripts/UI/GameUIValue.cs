@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameUIValue : SingletonMono<GameUIValue>
 {
-    private int life = 3;
+    private int life = 5;
     public int Life
     {
         get
@@ -14,7 +14,7 @@ public class GameUIValue : SingletonMono<GameUIValue>
         }
         set
         {
-            if (value < 0 || value > 3)
+            if (value < 0 || value > 5)
             {
                 return;
             }
@@ -95,7 +95,7 @@ public class GameUIValue : SingletonMono<GameUIValue>
 
     public void ResetGameValue()
     {
-        Life = 3;
+        Life = 5;
         Speed = 0;
         Far = 0;
     }

@@ -106,8 +106,8 @@ public class GameUIState : MonoBehaviour
         StartGroup.SetActive(true);
         ImageTitle.color = Color.white;
         ImageButtonStart.color = Color.white;
-        TextButtonStart.color = Color.white;
-        TextTitle.color = Color.white;
+        TextButtonStart.color = Color.black;
+        TextTitle.color = Color.black;
 
         EndGroup.SetActive(false);
         WinGroup.SetActive(false);

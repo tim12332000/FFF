@@ -22,6 +22,12 @@ public class GameUIState : MonoBehaviour
     public Image ImageButtonRestart = null;
     public Text TextButtonRestart = null;
     //===========================================================
+    public GameObject WinGroup = null;
+    public GameObject GameObjectButtonWinRestart = null;
+    public Text TextWin = null;
+    public Image ImageButtonWinRestart = null;
+    public Text TextButtonWinRestart = null;
+    //===========================================================
     private AudioSource AudioSourceBGM = null;
     public AudioClip[] AudioClipsBGM;
 
@@ -33,6 +39,7 @@ public class GameUIState : MonoBehaviour
         GlobelEvents.Instance.GameStart.AddListener(GameStart);
         GlobelEvents.Instance.BackToTitle.AddListener(BackToTitle);
         GlobelEvents.Instance.GameOver.AddListener(GameOver);
+        GlobelEvents.Instance.GameWin.AddListener(GameWin);
 
         EventTriggerListener.Get(GameObjectButtonStart).onClick += ClickStart;
         EventTriggerListener.Get(GameObjectButtonRestart).onClick += ClickRestart;
@@ -65,6 +72,7 @@ public class GameUIState : MonoBehaviour
         GameGroup.SetActive(false);
         StartGroup.SetActive(true);
         EndGroup.SetActive(false);
+        WinGroup.SetActive(false);
 
         PlayBGM(0);
     }
@@ -76,6 +84,7 @@ public class GameUIState : MonoBehaviour
         GameMain.GameStart();
         GameGroup.SetActive(true);
         EndGroup.SetActive(false);
+        WinGroup.SetActive(false);
 
         ImageTitle.DOFade(0, 0.5f).OnComplete(() =>
         {
@@ -101,6 +110,7 @@ public class GameUIState : MonoBehaviour
         TextTitle.color = Color.white;
 
         EndGroup.SetActive(false);
+        WinGroup.SetActive(false);
 
         PlayBGM(0);
     }
@@ -111,6 +121,7 @@ public class GameUIState : MonoBehaviour
         GameGroup.SetActive(false);
         StartGroup.SetActive(false);
         EndGroup.SetActive(true);
+        WinGroup.SetActive(false);
 
         TextGameOver.color = Color.clear;
         TextGameOver.DOFade(1, 0.5f);
@@ -120,6 +131,24 @@ public class GameUIState : MonoBehaviour
         ImageButtonRestart.DOFade(1, 0.5f);
 
         PlayBGM(2);
+    }
+
+    public void GameWin()
+    {
+        GameMain.GameOver();
+        GameGroup.SetActive(false);
+        StartGroup.SetActive(false);
+        EndGroup.SetActive(false);
+        WinGroup.SetActive(true);
+
+        TextWin.color = Color.clear;
+        TextWin.DOFade(1, 0.5f);
+        TextButtonWinRestart.color = Color.clear;
+        TextButtonWinRestart.DOFade(1, 0.5f);
+        ImageButtonWinRestart.color = new Color(1, 1, 1, 0);
+        ImageButtonWinRestart.DOFade(1, 0.5f);
+
+        PlayBGM(3);
     }
 
     public void PlayBGM(int index)

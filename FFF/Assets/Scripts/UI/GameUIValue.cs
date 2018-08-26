@@ -112,6 +112,5 @@ public class GameUIValue : SingletonMono<GameUIValue>
 
         float nowPoint = progressTotal * percent;
         RectTransformGirl.anchoredPosition = Vector2.right * (-540 + nowPoint) + Vector2.up * 75;
-
     }
 }

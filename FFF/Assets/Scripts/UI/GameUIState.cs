@@ -71,6 +71,8 @@ public class GameUIState : MonoBehaviour
 
     public void GameStart()
     {
+        GameUIValue.Instance.ResetGameValue();
+
         GameMain.GameStart();
         GameGroup.SetActive(true);
         EndGroup.SetActive(false);

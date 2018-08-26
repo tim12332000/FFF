@@ -62,19 +62,19 @@ public class GameUIValue : SingletonMono<GameUIValue>
         }
     }
     public Text TextFar = null;
+    //============================================================
+    public RectTransform RectTransformGirl = null;
 
     void Awake()
     {
-        Life = 3;
-        Speed = 0;
-        Far = 0;
+
     }
 
     void Start()
     {
 
     }
-
+    
     void Update()
     {
         /*
@@ -91,5 +91,26 @@ public class GameUIValue : SingletonMono<GameUIValue>
             Far += 100;
         }
         */
+    }
+
+    public void ResetGameValue()
+    {
+        Life = 3;
+        Speed = 0;
+        Far = 0;
+    }
+
+    public void SetProgress(float now, float total)
+    {
+        float progressTotal = 440;
+        float percent = now / total;
+
+        if (percent > 1)
+        {
+            percent = 1;
+        }
+
+        float nowPoint = progressTotal * percent;
+        RectTransformGirl.anchoredPosition = Vector2.right * (-540 + nowPoint) + Vector2.up * 75;
     }
 }

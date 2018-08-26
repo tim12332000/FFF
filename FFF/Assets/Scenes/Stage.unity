@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4513352, g: 0.5002631, b: 0.5693223, a: 1}
+  m_IndirectSpecularColor: {r: 0.4513347, g: 0.5002622, b: 0.5693212, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1623,6 +1623,7 @@ GameObject:
   - component: {fileID: 642699265}
   - component: {fileID: 642699264}
   - component: {fileID: 642699263}
+  - component: {fileID: 642699266}
   m_Layer: 0
   m_Name: '[CurvedController]'
   m_TagString: Untagged
@@ -1902,7 +1903,7 @@ MonoBehaviour:
     RestartOnEnable: 1
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 0
+    editorFlags: 2
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
@@ -2152,7 +2153,7 @@ MonoBehaviour:
     RestartOnEnable: 1
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 2
+    editorFlags: 7
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
@@ -2196,6 +2197,18 @@ MonoBehaviour:
   eventName: GO
   targetFSM: {fileID: 642699264}
   ScrollSpeed: -50
+--- !u!114 &642699266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642699260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f037b55dcd0c74903b6cabba1666032b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StageGround: {fileID: 642699265}
 --- !u!1 &700563020
 GameObject:
   m_ObjectHideFlags: 0

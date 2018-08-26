@@ -10,7 +10,7 @@ public class GroundScrollController : MonoBehaviour {
     public float ScrollSpeed;
 
 	// Use this for initialization
-	void ScrollStart() {
+	public void ScrollStart() {
 
         targetFSM.SendEvent(eventName);
 

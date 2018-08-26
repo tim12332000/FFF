@@ -12,6 +12,11 @@ public class CharRoot : MonoBehaviour
 		CharHealth.OnHpZero += OnHpZero;
 	}
 
+	public void OnTriggerEnter(Collider other)
+	{
+		
+	}
+
 	public void Release()
 	{
 		CharHealth.OnHpZero -= OnHpZero;

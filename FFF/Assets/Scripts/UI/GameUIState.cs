@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using Gameplay.Utility;
 
 public class GameUIState : MonoBehaviour
 {
@@ -55,6 +56,8 @@ public class GameUIState : MonoBehaviour
         ImageButtonStart.DOFade(0, 0.5f);
         TextButtonStart.DOFade(0, 0.5f);
         TextTitle.DOFade(0, 0.5f);
+
+		ScheduleHelper.Instance.DelayDo(StageManager.Instance.Go, 1f);
     }
 
     public void BackToTitle()

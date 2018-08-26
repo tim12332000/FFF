@@ -75,7 +75,12 @@ public class CharHealth : MonoBehaviour
     public void TakeInvincible()
     {
         IsInvincible = true;
-		//ScheduleHelper.Instance.DelayDo(,3);
+        ScheduleHelper.Instance.DelayDo(CloseInvincible, 3);
+    }
+
+    public void CloseInvincible()
+    {
+        IsInvincible = false;
     }
 
     private void Awake()

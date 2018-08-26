@@ -217,6 +217,54 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1825976612073780, guid: c4e2570473f774b6d8c6982f6c9dbbf2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861709447598834, guid: c4e2570473f774b6d8c6982f6c9dbbf2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861709447598834, guid: c4e2570473f774b6d8c6982f6c9dbbf2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861709447598834, guid: c4e2570473f774b6d8c6982f6c9dbbf2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861709447598834, guid: c4e2570473f774b6d8c6982f6c9dbbf2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861709447598834, guid: c4e2570473f774b6d8c6982f6c9dbbf2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861709447598834, guid: c4e2570473f774b6d8c6982f6c9dbbf2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861709447598834, guid: c4e2570473f774b6d8c6982f6c9dbbf2, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861709447598834, guid: c4e2570473f774b6d8c6982f6c9dbbf2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861709447598834, guid: c4e2570473f774b6d8c6982f6c9dbbf2, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861709447598834, guid: c4e2570473f774b6d8c6982f6c9dbbf2, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521500730318420, guid: c4e2570473f774b6d8c6982f6c9dbbf2, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4e2570473f774b6d8c6982f6c9dbbf2, type: 2}
   m_IsPrefabParent: 0

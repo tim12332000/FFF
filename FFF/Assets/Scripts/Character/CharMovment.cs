@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using System;
 using UnityEngine.Events;
+using Gameplay.Utility;
 
 public class CharMovment : MonoBehaviour
 {
@@ -37,6 +38,10 @@ public class CharMovment : MonoBehaviour
 	private GameObject _running;
 	[SerializeField]
 	private GameObject _jumping;
+	[SerializeField]
+	private GameObject _failling;
+
+	private ITask _faillingTask;
 
 	// Update is called once per frame
 	void Update()
@@ -127,37 +132,44 @@ public class CharMovment : MonoBehaviour
 		gameObject.transform.DORotate(Vector3.zero, 0.1f);
 	}
 
-	public void RightStop()
+	private void HideAll()
 	{
+		if (_jumping == null)
+			return;
 
+		if (_running == null)
+			return;
+
+		if (_failling == null)
+			return;
+
+		if (_faillingTask != null)
+		{
+			_faillingTask.Dispose();
+			_faillingTask = null;
+		}
+
+		_jumping.SetActive(false);
+		_running.SetActive(false);
+		_failling.SetActive(false);
 	}
 
-	public void LeftStop()
+	public void ChangeToFaill(float duration)
 	{
-
+		HideAll();
+		_failling.SetActive(true);
+		_faillingTask = ScheduleHelper.Instance.DelayDo(ChangeToRunning, duration);
 	}
 
 	private void ChangeToJump()
 	{
-		if (_jumping == null)
-			return;
-
-		if (_running == null)
-			return;
-
+		HideAll();
 		_jumping.SetActive(true);
-		_running.SetActive(false);
 	}
 
 	private void ChangeToRunning()
 	{
-		if (_jumping == null)
-			return;
-
-		if (_running == null)
-			return;
-
-		_jumping.SetActive(false);
+		HideAll();
 		_running.SetActive(true);
 	}
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -207,6 +207,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bd224a234d7c4557b44c62d7251ee71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StageEvents:
+  - TriggerTime: 4
+    BlendXTo: -3
+    BlendYTo: -3
+    DurationTime: 3.5
+  - TriggerTime: 8
+    BlendXTo: -3
+    BlendYTo: -3
+    DurationTime: 3.5
+  - TriggerTime: 12
+    BlendXTo: 5
+    BlendYTo: 3
+    DurationTime: 0.5
+  - TriggerTime: 15
+    BlendXTo: 0.3
+    BlendYTo: 4
+    DurationTime: 2.5
+  - TriggerTime: 18
+    BlendXTo: -1
+    BlendYTo: -0.2
+    DurationTime: 0.2
+  - TriggerTime: 24
+    BlendXTo: 5
+    BlendYTo: 0.6
+    DurationTime: 0.2
 --- !u!114 &458987036
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -51,7 +51,7 @@ public class StageManager : MonoBehaviour
 	}
 
 	private float _nowS;
-	private float _newSpd;
+	public float NewSpd;
 	private bool _gameOver;
 
 	public bool _stopUpdateSpd = false;
@@ -104,7 +104,7 @@ public class StageManager : MonoBehaviour
 		float newSpd = GetSpeed() + Time.deltaTime * -GlovelSetting.Instance.AddSpeedofTime;
 		SetSpeed(newSpd);
 
-		_newSpd = newSpd;
+		NewSpd = newSpd;
 
 		GameUIValue.Instance.Speed = Mathf.Floor(-newSpd);
 	}
@@ -114,7 +114,7 @@ public class StageManager : MonoBehaviour
 		Debug.LogError("go");
 
 		_nowS = 0;
-		_newSpd = 0;
+		NewSpd = 0;
 
 		GlovelSetting.Instance.IsEnterGame = true;
 		SetSpeed(GlovelSetting.Instance.OrignalSpd);
@@ -153,7 +153,7 @@ public class StageManager : MonoBehaviour
 		if (_gameOver)
 			return;
 
-		_nowS += _newSpd;
+		_nowS += NewSpd;
 		GameUIValue.Instance.SetProgress(-_nowS, GlovelSetting.Instance.GameWinS);
 		GameUIValue.Instance.Far = Mathf.Floor(-_nowS);
 

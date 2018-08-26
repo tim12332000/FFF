@@ -150,7 +150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4868649879164244, guid: f8b881d5ababbea46bfb12dc8c72ad1d, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f8b881d5ababbea46bfb12dc8c72ad1d, type: 2}
@@ -254,7 +254,7 @@ Transform:
   m_LocalScale: {x: 10, y: 17.619041, z: 10}
   m_Children: []
   m_Father: {fileID: 941481735}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.6190002}
 --- !u!23 &86323649
 MeshRenderer:
@@ -331,11 +331,11 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 114574229}
-  m_LocalRotation: {x: -0, y: -0.12334308, z: -0.07121221, w: 0.9898057}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.25618052, y: -0.13757135, z: -0.036862176, w: 0.95607895}
+  m_LocalPosition: {x: -6.81, y: 0, z: 2.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1227076143}
+  m_Father: {fileID: 941481735}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -1.0070001, y: -14.135, z: -8.1050005}
 --- !u!212 &114574231
@@ -419,7 +419,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4409127254933420, guid: 26ef1928c54bb244bbe447749f85e4fa, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26ef1928c54bb244bbe447749f85e4fa, type: 2}
@@ -461,10 +461,76 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4263596462876622, guid: d2200735220f9c843b15c4c37b2a0bb7, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d2200735220f9c843b15c4c37b2a0bb7, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &226022747
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1040300879}
+    m_Modifications:
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4952496403506108, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.72249
+      objectReference: {fileID: 0}
+    - target: {fileID: 4952496403506108, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.5964
+      objectReference: {fileID: 0}
+    - target: {fileID: 4952496403506108, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.0817
+      objectReference: {fileID: 0}
+    - target: {fileID: 4952496403506108, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 55.430626
+      objectReference: {fileID: 0}
+    - target: {fileID: 4952496403506108, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 55.430588
+      objectReference: {fileID: 0}
+    - target: {fileID: 4952496403506108, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 55.430588
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0e30c1957b8484c468535fdf5f92542f, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &226766194 stripped
 Transform:
@@ -481,6 +547,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4312572531733530, guid: a2eda178421711e479b798af8a21d172,
     type: 2}
   m_PrefabInternal: {fileID: 1390235289}
+--- !u!4 &293685746 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4896976229838764, guid: 0e30c1957b8484c468535fdf5f92542f,
+    type: 2}
+  m_PrefabInternal: {fileID: 226022747}
 --- !u!1 &368868440
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,7 +806,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4131872281686682, guid: 5b18a1b09c565a8458ed65fa9b1eae26, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b18a1b09c565a8458ed65fa9b1eae26, type: 2}
@@ -1471,36 +1542,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StageGround: {fileID: 642699265}
---- !u!1 &700563020
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 700563021}
-  m_Layer: 0
-  m_Name: ObjHolder (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &700563021
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 700563020}
-  m_LocalRotation: {x: -0.258819, y: -0, z: -0, w: 0.9659259}
-  m_LocalPosition: {x: -13.43, y: 0, z: 7.06}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2125671711}
-  - {fileID: 1144926137}
-  m_Father: {fileID: 941481735}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: -30, y: 0, z: 0}
 --- !u!4 &730785688 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4020829916360238, guid: 6df9cd729c314034893f3ebbb49252c9,
@@ -1537,11 +1578,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 973044702}
+  - {fileID: 1280798548}
+  - {fileID: 114574230}
+  - {fileID: 1144926137}
   - {fileID: 1855633243}
   - {fileID: 86323648}
-  - {fileID: 1227076143}
-  - {fileID: 700563021}
   m_Father: {fileID: 465812086}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1760,22 +1801,44 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.SetPosition
+        - HutongGames.PlayMaker.Actions.GetChild
+        - HutongGames.PlayMaker.Actions.SetParent
         - HutongGames.PlayMaker.Actions.SendEventByName
         customNames:
         - 
         - 
-        actionEnabled: 0001
-        actionIsOpen: 0001
-        actionStartIndex: 0000000008000000
-        actionHashCodes: f6e5be03ba7ea101
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000400000008000000
+        actionHashCodes: 184b5704ea32a105ba7ea101
         unityObjectParams: []
-        fsmGameObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: My.Obstacle
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 1040300877}
         fsmOwnerDefaultParams:
         - ownerOption: 0
           gameObject:
             useVariable: 0
             name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: My.Obstacle
             tooltip: 
             showInInspector: 0
             networkSync: 0
@@ -1824,26 +1887,34 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Obstacle
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: TAKE_ME_BACK
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams:
-        - useVariable: 1
+        - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 1
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 0
           name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: Ground/EndPoint
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -1854,41 +1925,33 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        fsmIntParams: []
-        fsmBoolParams: []
         fsmVector2Params: []
-        fsmVector3Params:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
+        fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 00000000000100
+        byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001c0000000f0000000f0000000f0000000700000001000000010000001f000000120000000f00000001000000
+        paramDataType: 14000000120000001200000013000000140000001300000011000000110000001f000000120000000f00000001000000
         paramName:
         - gameObject
-        - vector
-        - x
-        - y
-        - z
-        - space
-        - everyFrame
-        - lateUpdate
+        - childName
+        - withTag
+        - storeResult
+        - gameObject
+        - parent
+        - resetLocalPosition
+        - resetLocalRotation
         - eventTarget
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 000000000000000000000000010000000200000000000000040000000500000000000000000000000300000006000000
-        paramByteDataSize: 000000000000000000000000000000000000000004000000010000000100000000000000000000000000000001000000
+        paramDataPos: 000000000000000001000000000000000100000001000000000000000100000000000000020000000000000000000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
     - name: init
       description: 
       colorIndex: 0
@@ -1976,7 +2039,13 @@ MonoBehaviour:
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
-      gameObjectVariables: []
+      gameObjectVariables:
+      - useVariable: 1
+        name: My.Obstacle
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
       objectVariables: []
       materialVariables: []
       textureVariables: []
@@ -1984,7 +2053,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000
+      variableCategoryIDs: 0000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -2124,7 +2193,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 1
           networkSync: 0
-          value: -15
+          value: -30
         - useVariable: 1
           name: Ground_len
           tooltip: 
@@ -2154,7 +2223,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 1
           networkSync: 0
-          value: -15
+          value: -30
         - useVariable: 1
           name: Ground/EndPoint
           tooltip: 
@@ -2172,7 +2241,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 1
           networkSync: 0
-          value: -15
+          value: -30
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
@@ -2223,7 +2292,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: spwn obj
+        toState: check next
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -2422,7 +2491,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 1
           networkSync: 0
-          value: 6
+          value: 7
         - useVariable: 0
           name: 
           tooltip: 
@@ -2434,7 +2503,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 1
           networkSync: 0
-          value: 6
+          value: 7
         - useVariable: 0
           name: 
           tooltip: 
@@ -2479,8 +2548,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 268
-        y: 169
+        x: 264
+        y: 176.99219
         width: 100
         height: 32
       isBreakpoint: 0
@@ -2511,7 +2580,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101010101
-        actionIsOpen: 010101010101
+        actionIsOpen: 000000000000
         actionStartIndex: 000000000200000005000000080000000e00000013000000
         actionHashCodes: d97b72022ee017042ee01704dfd72a04bf83c900ea32a105
         unityObjectParams: []
@@ -2859,7 +2928,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: State 1
+        toState: Add Obstacle
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -3140,8 +3209,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 642.03125
-        y: 204.86719
+        x: 648.03125
+        y: 266.8672
         width: 151
         height: 32
       isBreakpoint: 0
@@ -3301,8 +3370,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 474
-        y: 188
+        x: 458
+        y: 257
         width: 100
         height: 48
       isBreakpoint: 0
@@ -3395,6 +3464,291 @@ MonoBehaviour:
         - delay
         paramDataPos: 00000000000000000100000001000000000000000100000002000000
         paramByteDataSize: 00000000000000000000000000000000000000000000000000000000
+    - name: Add Obstacle
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 682
+        y: 181
+        width: 117
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: State 1
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetRandomChild
+        - HutongGames.PlayMaker.Actions.SetParent
+        - HutongGames.PlayMaker.Actions.RandomFloat
+        - HutongGames.PlayMaker.Actions.RandomFloat
+        - HutongGames.PlayMaker.Actions.SetVector3XYZ
+        - HutongGames.PlayMaker.Actions.SetPosition
+        - HutongGames.PlayMaker.Actions.SetRotation
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 01010101000101
+        actionIsOpen: 01010101000101
+        actionStartIndex: 000000000200000006000000090000000c000000120000001a000000
+        actionHashCodes: d97b7202ea32a1052ee017042ee01704dfd72a04f6e5be03979e4104
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Obstacle.target
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: ground.target
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1040300877}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Obstacle.target
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Obstacle.target
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: -5
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 5
+        - useVariable: 1
+          name: obj.offset.x
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: -5
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 5
+        - useVariable: 1
+          name: obj.offset.z
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: obj.offset.x
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: obj.offset.z
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: obj.offset.x
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.1
+        - useVariable: 1
+          name: obj.offset.z
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: -24
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 15
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params:
+        - useVariable: 1
+          name: obj.offset.v3
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0, w: 0}
+        stringParams: []
+        byteData: 00010000000000010000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000013000000140000001300000011000000110000000f0000000f0000000f0000000f0000000f0000000f0000001c0000001c0000000f0000000f0000000f00000001000000140000001c0000000f0000000f0000000f00000007000000010000000100000014000000230000001c0000000f0000000f0000000f000000070000000100000001000000
+        paramName:
+        - gameObject
+        - storeResult
+        - gameObject
+        - parent
+        - resetLocalPosition
+        - resetLocalRotation
+        - min
+        - max
+        - storeResult
+        - min
+        - max
+        - storeResult
+        - vector3Variable
+        - vector3Value
+        - x
+        - y
+        - z
+        - everyFrame
+        - gameObject
+        - vector
+        - x
+        - y
+        - z
+        - space
+        - everyFrame
+        - lateUpdate
+        - gameObject
+        - quaternion
+        - vector
+        - xAngle
+        - yAngle
+        - zAngle
+        - space
+        - everyFrame
+        - lateUpdate
+        paramDataPos: 0000000000000000010000000100000000000000010000000000000001000000020000000300000004000000050000000000000001000000060000000700000008000000000000000200000002000000090000000a0000000b0000000100000005000000060000000300000000000000030000000c0000000d0000000e000000070000000b0000000c000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000040000000100000001000000000000000000000000000000000000000000000000000000040000000100000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -3415,12 +3769,6 @@ MonoBehaviour:
     variables:
       floatVariables:
       - useVariable: 1
-        name: "\u5751\u6D1E\u9577\u5EA6"
-        tooltip: 
-        showInInspector: 1
-        networkSync: 0
-        value: 5
-      - useVariable: 1
         name: Ground_len
         tooltip: 
         showInInspector: 1
@@ -3431,7 +3779,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: -15
+        value: -30
       - useVariable: 1
         name: obj.offset.x
         tooltip: 
@@ -3456,13 +3804,19 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         value: 0.1
+      - useVariable: 1
+        name: "\u5751\u6D1E\u9577\u5EA6"
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 5
       intVariables:
       - useVariable: 1
         name: Ground_Spwn
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 6
+        value: 7
       boolVariables: []
       stringVariables: []
       vector2Variables: []
@@ -3485,6 +3839,12 @@ MonoBehaviour:
       gameObjectVariables:
       - useVariable: 1
         name: Obj
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
+        name: Obstacle.target
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -3521,7 +3881,7 @@ MonoBehaviour:
       categories:
       - 
       - "=== \u8A2D\u5B9A ==="
-      variableCategoryIDs: 010000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 01000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -3580,36 +3940,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &973044701
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 973044702}
-  m_Layer: 0
-  m_Name: ObjHolder (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &973044702
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 973044701}
-  m_LocalRotation: {x: -0.258819, y: -0, z: -0, w: 0.9659259}
-  m_LocalPosition: {x: 7.06, y: 0, z: 6.96}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1748714920}
-  - {fileID: 1280798548}
-  m_Father: {fileID: 941481735}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -30, y: 0, z: 0}
 --- !u!1 &1040300877
 GameObject:
   m_ObjectHideFlags: 0
@@ -3618,7 +3948,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1040300879}
-  - component: {fileID: 1040300878}
   m_Layer: 0
   m_Name: '[ObjPool]'
   m_TagString: Untagged
@@ -3626,140 +3955,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1040300878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1040300877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fsm:
-    dataVersion: 2
-    usedInTemplate: {fileID: 0}
-    name: FSM
-    startState: State 1
-    states:
-    - name: State 1
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 50
-        y: 100
-        width: 100
-        height: 16
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions: []
-      actionData:
-        actionNames: []
-        customNames: []
-        actionEnabled: 
-        actionIsOpen: 
-        actionStartIndex: 
-        actionHashCodes: 
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams: []
-        fsmBoolParams: []
-        fsmVector2Params: []
-        fsmVector3Params: []
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams: []
-        byteData: 
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 
-        paramName: []
-        paramDataPos: 
-        paramByteDataSize: 
-    events: []
-    globalTransitions: []
-    variables:
-      floatVariables: []
-      intVariables: []
-      boolVariables: []
-      stringVariables: []
-      vector2Variables: []
-      vector3Variables: []
-      colorVariables: []
-      rectVariables: []
-      quaternionVariables: []
-      gameObjectVariables: []
-      objectVariables: []
-      materialVariables: []
-      textureVariables: []
-      arrayVariables: []
-      enumVariables: []
-      categories:
-      - 
-      variableCategoryIDs: 
-    description: 
-    docUrl: 
-    showStateLabel: 0
-    maxLoopCount: 0
-    watermark: 
-    password: 
-    locked: 0
-    manualUpdate: 0
-    keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
-    ExposedEvents: []
-    RestartOnEnable: 1
-    EnableDebugFlow: 0
-    EnableBreakpoints: 1
-    editorFlags: 1
-    activeStateName: 
-    mouseEvents: 0
-    handleLevelLoaded: 0
-    handleTriggerEnter2D: 0
-    handleTriggerExit2D: 0
-    handleTriggerStay2D: 0
-    handleCollisionEnter2D: 0
-    handleCollisionExit2D: 0
-    handleCollisionStay2D: 0
-    handleTriggerEnter: 0
-    handleTriggerExit: 0
-    handleTriggerStay: 0
-    handleCollisionEnter: 0
-    handleCollisionExit: 0
-    handleCollisionStay: 0
-    handleParticleCollision: 0
-    handleControllerColliderHit: 0
-    handleJointBreak: 0
-    handleJointBreak2D: 0
-    handleOnGUI: 0
-    handleFixedUpdate: 0
-    handleLateUpdate: 0
-    handleApplicationEvents: 0
-    handleUiEvents: 0
-    handleLegacyNetworking: 0
-    handleAnimatorMove: 0
-    handleAnimatorIK: 0
-  fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
 --- !u!4 &1040300879
 Transform:
   m_ObjectHideFlags: 0
@@ -3770,6 +3965,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 293685746}
   - {fileID: 226766194}
   - {fileID: 1973884773}
   - {fileID: 1596699228}
@@ -3812,12 +4008,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1144926136}
-  m_LocalRotation: {x: 0.000000044703484, y: -0.22862828, z: -0.13199861, w: 0.96452343}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.24963696, y: -0.25500172, z: -0.06832753, w: 0.93165815}
+  m_LocalPosition: {x: -13.43, y: 0, z: 7.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 700563021}
-  m_RootOrder: 1
+  m_Father: {fileID: 941481735}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -3.4600003, y: -26.221, z: -14.779}
 --- !u!212 &1144926138
 SpriteRenderer:
@@ -3900,7 +4096,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4029479103012368, guid: 61e209a232d01ac4b98376beb7a625ab, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 61e209a232d01ac4b98376beb7a625ab, type: 2}
@@ -3942,41 +4138,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4136044151030040, guid: 38e0bc35da3fe5f47ac7cef2196f0c58, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 38e0bc35da3fe5f47ac7cef2196f0c58, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1227076142
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1227076143}
-  m_Layer: 0
-  m_Name: ObjHolder (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1227076143
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1227076142}
-  m_LocalRotation: {x: -0.258819, y: -0, z: -0, w: 0.9659259}
-  m_LocalPosition: {x: -6.81, y: 0, z: 2.82}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1785163340}
-  - {fileID: 114574230}
-  m_Father: {fileID: 941481735}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -30, y: 0, z: 0}
 --- !u!1 &1280798547
 GameObject:
   m_ObjectHideFlags: 0
@@ -3999,12 +4165,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1280798547}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.258819, y: -0, z: -0, w: 0.9659259}
+  m_LocalPosition: {x: 7.06, y: 0, z: 6.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 973044702}
-  m_RootOrder: 1
+  m_Father: {fileID: 941481735}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1280798549
 SpriteRenderer:
@@ -4222,6 +4388,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1362275085 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1145536048577110, guid: 0e30c1957b8484c468535fdf5f92542f,
+    type: 2}
+  m_PrefabInternal: {fileID: 226022747}
+--- !u!65 &1362275089
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1362275085}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19782498, y: 0.132898, z: 0.18002099}
+  m_Center: {x: -0.013273499, y: 0.028429002, z: 0.0382435}
 --- !u!1001 &1390235289
 Prefab:
   m_ObjectHideFlags: 0
@@ -4259,7 +4442,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4312572531733530, guid: a2eda178421711e479b798af8a21d172, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a2eda178421711e479b798af8a21d172, type: 2}
@@ -4301,7 +4484,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4734728296885622, guid: fdec0ca6f4d29af4aa898e74ef411e24, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fdec0ca6f4d29af4aa898e74ef411e24, type: 2}
@@ -4343,7 +4526,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4506942773647546, guid: 5eff326906bd1174e870b98b3fafc000, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5eff326906bd1174e870b98b3fafc000, type: 2}
@@ -4390,7 +4573,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4065896024838578, guid: caf3557e0e6a6ae4c9d71590843208a4, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: caf3557e0e6a6ae4c9d71590843208a4, type: 2}
@@ -4437,7 +4620,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4829876504374598, guid: b49bac0cecf2a2f4dbf56abeb22c7bc8, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b49bac0cecf2a2f4dbf56abeb22c7bc8, type: 2}
@@ -4479,7 +4662,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4027710082084434, guid: dbfc9d16319498b448ceb101592ad26b, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dbfc9d16319498b448ceb101592ad26b, type: 2}
@@ -4521,179 +4704,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4881748253345840, guid: 4c8df370166c7d64289b7ad72522e026, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c8df370166c7d64289b7ad72522e026, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1748714919
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1748714920}
-  - component: {fileID: 1748714923}
-  - component: {fileID: 1748714922}
-  - component: {fileID: 1748714921}
-  m_Layer: 0
-  m_Name: Obstacle
-  m_TagString: Obstacle
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1748714920
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1748714919}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.132, y: 2.88, z: 0.36}
-  m_LocalScale: {x: 1.307507, y: 5.4174037, z: 1.0000005}
-  m_Children: []
-  m_Father: {fileID: 973044702}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1748714921
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1748714919}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: c11f9d36f148d0e4f903638dbd738342, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!65 &1748714922
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1748714919}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1748714923
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1748714919}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1785163339
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1785163340}
-  - component: {fileID: 1785163343}
-  - component: {fileID: 1785163342}
-  - component: {fileID: 1785163341}
-  m_Layer: 0
-  m_Name: Obstacle
-  m_TagString: Obstacle
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1785163340
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1785163339}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.132, y: 2.88, z: 0.36}
-  m_LocalScale: {x: 1.307507, y: 5.4174037, z: 1.0000005}
-  m_Children: []
-  m_Father: {fileID: 1227076143}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1785163341
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1785163339}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: c11f9d36f148d0e4f903638dbd738342, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!65 &1785163342
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1785163339}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1785163343
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1785163339}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1800856180 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4868649879164244, guid: f8b881d5ababbea46bfb12dc8c72ad1d,
@@ -4736,7 +4751,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4316497675523994, guid: 45f10c729be3c30428c42b19db3147c1, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45f10c729be3c30428c42b19db3147c1, type: 2}
@@ -4770,7 +4785,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 20}
   m_Children: []
   m_Father: {fileID: 941481735}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1855633244
 MeshRenderer:
@@ -4934,7 +4949,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4775348708660848, guid: 0ae4ae2e4799f4d49b0248e4fc492669, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0ae4ae2e4799f4d49b0248e4fc492669, type: 2}
@@ -4976,7 +4991,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4020829916360238, guid: 6df9cd729c314034893f3ebbb49252c9, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6df9cd729c314034893f3ebbb49252c9, type: 2}
@@ -4991,90 +5006,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4136044151030040, guid: 38e0bc35da3fe5f47ac7cef2196f0c58,
     type: 2}
   m_PrefabInternal: {fileID: 1226041097}
---- !u!1 &2125671710
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2125671711}
-  - component: {fileID: 2125671714}
-  - component: {fileID: 2125671713}
-  - component: {fileID: 2125671712}
-  m_Layer: 0
-  m_Name: Obstacle
-  m_TagString: Obstacle
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2125671711
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2125671710}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.132, y: 2.88, z: 0.36}
-  m_LocalScale: {x: 1.307507, y: 5.4174037, z: 1.0000005}
-  m_Children: []
-  m_Father: {fileID: 700563021}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &2125671712
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2125671710}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: c11f9d36f148d0e4f903638dbd738342, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!65 &2125671713
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2125671710}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &2125671714
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2125671710}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &2136420995
 Prefab:
   m_ObjectHideFlags: 0
@@ -5112,7 +5043,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4106423828691754, guid: 1aeb63871d173e7489843c117bd6e178, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1aeb63871d173e7489843c117bd6e178, type: 2}

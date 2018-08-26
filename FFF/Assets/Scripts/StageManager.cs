@@ -52,6 +52,7 @@ public class StageManager : MonoBehaviour
 
 	private float _nowS;
 	private float _newSpd;
+	private bool _gameOver;
 
 	public bool _stopUpdateSpd = false;
 
@@ -67,6 +68,8 @@ public class StageManager : MonoBehaviour
 		SetSpeed(0);
 
 		Debug.LogError("gamewin");
+
+		_gameOver = true;
 	}
 
 	public void OnGameOver()
@@ -75,6 +78,8 @@ public class StageManager : MonoBehaviour
 		SetSpeed(0);
 
 		Debug.LogError("gameover");
+
+		_gameOver = true;
 	}
 
 	public void Update()
@@ -123,8 +128,12 @@ public class StageManager : MonoBehaviour
 		ScheduleHelper.Instance.RepeatForver(RefreshS, 1f);
 	}
 
+
 	private void RefreshS()
 	{
+		if (_gameOver)
+			return;
+
 		_nowS += _newSpd;
 		GameUIValue.Instance.SetProgress(-_nowS, GlovelSetting.Instance.GameWinS);
 

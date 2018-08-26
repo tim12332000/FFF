@@ -45,18 +45,66 @@ public class StageManager : MonoBehaviour
 	{
 		return CurvedWorldController._V_CW_Bend_X;
 	}
-	private float GetSpeed()
+	public float GetSpeed()
 	{
 		return StageGround.ScrollSpeed;
 	}
 
+	private float _nowS;
+	private float _newSpd;
+	private bool _gameOver;
+
+	public bool _stopUpdateSpd = false;
+
+	public void ChangeSpeed(float spdOff)
+	{
+		float newSpd = GetSpeed() + spdOff;
+		SetSpeed(newSpd);
+	}
+
+	public void OnGameWin()
+	{
+		_stopUpdateSpd = true;
+		SetSpeed(0);
+
+		Debug.LogError("gamewin");
+
+		_gameOver = true;
+	}
+
+	public void OnGameOver()
+	{
+		_stopUpdateSpd = true;
+		SetSpeed(0);
+
+		Debug.LogError("gameover");
+
+		_gameOver = true;
+	}
+
 	public void Update()
 	{
-		
+		if (_stopUpdateSpd)
+			return;
+
+		float newSpd = GetSpeed() + Time.deltaTime * -GlovelSetting.Instance.AddSpeedofTime;
+		SetSpeed(newSpd);
+
+		_newSpd = newSpd;
 	}
 
 	public void Go()
 	{
+		Debug.LogError("go");
+
+		GlovelSetting.Instance.IsEnterGame = true;
+		SetSpeed(GlovelSetting.Instance.OrignalSpd);
+
+		// setting x 3
+		GlovelSetting.Instance.StageEvents.AddRange(GlovelSetting.Instance.StageEvents);
+		GlovelSetting.Instance.StageEvents.AddRange(GlovelSetting.Instance.StageEvents);
+		GlovelSetting.Instance.StageEvents.AddRange(GlovelSetting.Instance.StageEvents);
+
 		foreach (StageEvent se in GlovelSetting.Instance.StageEvents)
 		{
 			ScheduleHelper.Instance.DelayDo(() =>
@@ -73,5 +121,25 @@ public class StageManager : MonoBehaviour
 	{
 		CurvedWorldController = GetComponent<CurvedWorld_Controller>();
 		Instance = this;
+
+		GlobelEvents.Instance.GameWin.AddListener(OnGameWin);
+		GlobelEvents.Instance.GameOver.AddListener(OnGameOver);
+
+		ScheduleHelper.Instance.RepeatForver(RefreshS, 1f);
+	}
+
+
+	private void RefreshS()
+	{
+		if (_gameOver)
+			return;
+
+		_nowS += _newSpd;
+		GameUIValue.Instance.SetProgress(-_nowS, GlovelSetting.Instance.GameWinS);
+
+		if (-_nowS > GlovelSetting.Instance.GameWinS)
+		{
+			GlobelEvents.Instance.GameWin.Invoke();
+		}
 	}
 }

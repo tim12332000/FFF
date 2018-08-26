@@ -3,22 +3,6 @@ using System.Collections;
 using System;
 using UnityEngine.Events;
 
-public class SpeedItem : Item
-{
-	public float duration;
-	public float SpeedChangeTo;
-
-	public override void Excute(CharRoot cr)
-	{
-	}
-}
-
-public class DmamageImmune : Item
-{
-	public override void Excute(CharRoot cr)
-	{
-	}
-}
 
 public abstract class Item : MonoBehaviour
 {

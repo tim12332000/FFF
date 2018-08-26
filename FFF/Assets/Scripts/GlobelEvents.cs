@@ -14,4 +14,6 @@ public class GlobelEvents : SingletonMono<GlobelEvents>
     public UnityEvent GameOver;
 
 	public UnityEvent GameWin;
+
+	public UnityEvent GameReStart;
 }

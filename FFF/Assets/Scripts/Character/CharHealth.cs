@@ -9,6 +9,7 @@ public class CharHealth : MonoBehaviour
     public event Action OnHpZero = delegate { };
     public UnityEvent OnDamage;
     public UnityEvent OnHeal;
+	public static CharHealth Instance;
 
     public int HpMax = 3;
 
@@ -39,7 +40,12 @@ public class CharHealth : MonoBehaviour
         TakeHeal(1);
     }
 
-    public void TakeDamage(int damage)
+	public void ResetHp()
+	{
+		_hp = HpMax;
+	}
+
+	public void TakeDamage(int damage)
     {
         if (IsInvincible)
         {
@@ -87,5 +93,6 @@ public class CharHealth : MonoBehaviour
     private void Awake()
     {
         _hp = HpMax;
-    }
+		Instance = this;
+	}
 }

@@ -77,6 +77,8 @@ public class StageManager : MonoBehaviour
 		_nowS = 0;
 		NewSpd = 0;
 		SetSpeed(GlovelSetting.Instance.OrignalSpd);
+
+		CharHealth.Instance.ResetHp();
 	}
 
 	public void OnGameWin()
@@ -123,36 +125,19 @@ public class StageManager : MonoBehaviour
 		GlovelSetting.Instance.IsEnterGame = true;
 		SetSpeed(GlovelSetting.Instance.OrignalSpd);
 
-		foreach (StageEvent se in GlovelSetting.Instance.StageEvents)
-		{
-			ScheduleHelper.Instance.DelayDo(() =>
-			 {
-				 DOTween.To(GetBlendX, SetBlendX, se.BlendXTo, se.DurationTime);
-				 DOTween.To(GetBlendY, SetBlendY, se.BlendYTo, se.DurationTime);
-			 }, se.TriggerTime);
-		}
-
 		float lastTime = GlovelSetting.Instance.StageEvents.Last().TriggerTime;
 		lastTime += GlovelSetting.Instance.StageEvents.Last().DurationTime;
 
-		// x2
-		foreach (StageEvent se in GlovelSetting.Instance.StageEvents)
+		for (int i = 0; i < 10; i++)
 		{
-			ScheduleHelper.Instance.DelayDo(() =>
+			foreach (StageEvent se in GlovelSetting.Instance.StageEvents)
 			{
-				DOTween.To(GetBlendX, SetBlendX, se.BlendXTo, se.DurationTime);
-				DOTween.To(GetBlendY, SetBlendY, se.BlendYTo, se.DurationTime);
-			}, se.TriggerTime + lastTime);
-		}
-
-		// x3
-		foreach (StageEvent se in GlovelSetting.Instance.StageEvents)
-		{
-			ScheduleHelper.Instance.DelayDo(() =>
-			{
-				DOTween.To(GetBlendX, SetBlendX, se.BlendXTo, se.DurationTime);
-				DOTween.To(GetBlendY, SetBlendY, se.BlendYTo, se.DurationTime);
-			}, se.TriggerTime + lastTime*2);
+				ScheduleHelper.Instance.DelayDo(() =>
+				 {
+					 DOTween.To(GetBlendX, SetBlendX, se.BlendXTo, se.DurationTime);
+					 DOTween.To(GetBlendY, SetBlendY, se.BlendYTo, se.DurationTime);
+				 }, se.TriggerTime * 1);
+			}
 		}
 
 		StageGround.ScrollStart();

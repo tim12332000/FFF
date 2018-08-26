@@ -57,6 +57,7 @@ public class CharHealth : MonoBehaviour
         GameUIValue.Instance.Life = _hp;
 
         OnDamage.Invoke();
+		StageManager.Instance.ChangeSpeed(5);
     }
 
     public void TakeHeal(int heal)

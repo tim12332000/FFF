@@ -44,6 +44,7 @@ public class GameUIState : MonoBehaviour
 
         EventTriggerListener.Get(GameObjectButtonStart).onClick += ClickStart;
         EventTriggerListener.Get(GameObjectButtonRestart).onClick += ClickRestart;
+        EventTriggerListener.Get(GameObjectButtonWinRestart).onClick += ClickRestart;
 
         GlobelEvents.Instance.Initialize.Invoke();
     }

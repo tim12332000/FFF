@@ -17,8 +17,12 @@ public class GameUIState : MonoBehaviour
     public Text TextTitle = null;
     //===========================================================
     public GameObject EndGroup = null;
+    public GameObject GameObjectButtonRestart = null;
+    public Text TextGameOver = null;
+    public Image ImageButtonRestart = null;
+    public Text TextButtonRestart = null;
     //===========================================================
-    public AudioSource AudioSourceBGM = null;
+    private AudioSource AudioSourceBGM = null;
     public AudioClip[] AudioClipsBGM;
 
     void Start()
@@ -31,6 +35,7 @@ public class GameUIState : MonoBehaviour
         GlobelEvents.Instance.GameOver.AddListener(GameOver);
 
         EventTriggerListener.Get(GameObjectButtonStart).onClick += ClickStart;
+        EventTriggerListener.Get(GameObjectButtonRestart).onClick += ClickRestart;
 
         GlobelEvents.Instance.Initialize.Invoke();
     }
@@ -47,6 +52,11 @@ public class GameUIState : MonoBehaviour
     public void ClickStart(GameObject click)
     {
         GlobelEvents.Instance.GameStart.Invoke();
+    }
+
+    public void ClickRestart(GameObject click)
+    {
+        GlobelEvents.Instance.BackToTitle.Invoke();
     }
 
     public void Initialize()
@@ -99,6 +109,15 @@ public class GameUIState : MonoBehaviour
         GameGroup.SetActive(false);
         StartGroup.SetActive(false);
         EndGroup.SetActive(true);
+
+        TextGameOver.color = Color.clear;
+        TextGameOver.DOFade(1, 0.5f);
+        TextButtonRestart.color = Color.clear;
+        TextButtonRestart.DOFade(1, 0.5f);
+        ImageButtonRestart.color = new Color(1, 1, 1, 0);
+        ImageButtonRestart.DOFade(1, 0.5f);
+
+        PlayBGM(2);
     }
 
     public void PlayBGM(int index)

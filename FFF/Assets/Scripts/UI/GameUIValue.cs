@@ -43,7 +43,7 @@ public class GameUIValue : SingletonMono<GameUIValue>
         set
         {
             speed = value;
-            TextSpeed.text = speed.ToString();
+            TextSpeed.text = speed.ToString()+"M/S";
         }
     }
     public Text TextSpeed = null;
@@ -58,7 +58,7 @@ public class GameUIValue : SingletonMono<GameUIValue>
         set
         {
             far = value;
-            TextFar.text = far.ToString()+"/M";
+            TextFar.text = far.ToString()+"M";
         }
     }
     public Text TextFar = null;

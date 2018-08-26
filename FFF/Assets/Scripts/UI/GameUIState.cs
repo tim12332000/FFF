@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class GameUIState : MonoBehaviour
 {
@@ -8,6 +10,10 @@ public class GameUIState : MonoBehaviour
     //===========================================================
     public GameObject StartGroup = null;
     public GameObject GameObjectButtonStart = null;
+    public Image ImageTitle = null;
+    public Image ImageButtonStart = null;
+    public Text TextButtonStart = null;
+    public Text TextTitle = null;
     //===========================================================
     public GameObject EndGroup = null;
 
@@ -20,12 +26,12 @@ public class GameUIState : MonoBehaviour
 
         EventTriggerListener.Get(GameObjectButtonStart).onClick += ClickStart;
 
-		GlobelEvents.Instance.Initialize.Invoke();
+        GlobelEvents.Instance.Initialize.Invoke();
     }
 
     public void ClickStart(GameObject click)
     {
-		GlobelEvents.Instance.GameStart.Invoke();
+        GlobelEvents.Instance.GameStart.Invoke();
     }
 
     public void Initialize()
@@ -40,15 +46,28 @@ public class GameUIState : MonoBehaviour
     {
         GameMain.GameStart();
         GameGroup.SetActive(true);
-        StartGroup.SetActive(false);
         EndGroup.SetActive(false);
+
+        ImageTitle.DOFade(0, 0.5f).OnComplete(() =>
+        {
+            StartGroup.SetActive(false);
+        });
+        ImageButtonStart.DOFade(0, 0.5f);
+        TextButtonStart.DOFade(0, 0.5f);
+        TextTitle.DOFade(0, 0.5f);
     }
 
     public void BackToTitle()
     {
         GameMain.BackToTitle();
         GameGroup.SetActive(false);
+
         StartGroup.SetActive(true);
+        ImageTitle.color = Color.white;
+        ImageButtonStart.color = Color.white;
+        TextButtonStart.color = Color.white;
+        TextTitle.color = Color.white;
+
         EndGroup.SetActive(false);
     }
 

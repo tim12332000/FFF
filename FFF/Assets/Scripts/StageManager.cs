@@ -5,6 +5,7 @@ using DG.Tweening;
 using Gameplay.Utility;
 using UnityEngine;
 using VacuumShaders.CurvedWorld;
+using System.Linq;
 
 [Serializable]
 public class StageEvent
@@ -122,11 +123,6 @@ public class StageManager : MonoBehaviour
 		GlovelSetting.Instance.IsEnterGame = true;
 		SetSpeed(GlovelSetting.Instance.OrignalSpd);
 
-		// setting x 3
-		GlovelSetting.Instance.StageEvents.AddRange(GlovelSetting.Instance.StageEvents);
-		GlovelSetting.Instance.StageEvents.AddRange(GlovelSetting.Instance.StageEvents);
-		GlovelSetting.Instance.StageEvents.AddRange(GlovelSetting.Instance.StageEvents);
-
 		foreach (StageEvent se in GlovelSetting.Instance.StageEvents)
 		{
 			ScheduleHelper.Instance.DelayDo(() =>
@@ -134,6 +130,29 @@ public class StageManager : MonoBehaviour
 				 DOTween.To(GetBlendX, SetBlendX, se.BlendXTo, se.DurationTime);
 				 DOTween.To(GetBlendY, SetBlendY, se.BlendYTo, se.DurationTime);
 			 }, se.TriggerTime);
+		}
+
+		float lastTime = GlovelSetting.Instance.StageEvents.Last().TriggerTime;
+		lastTime += GlovelSetting.Instance.StageEvents.Last().DurationTime;
+
+		// x2
+		foreach (StageEvent se in GlovelSetting.Instance.StageEvents)
+		{
+			ScheduleHelper.Instance.DelayDo(() =>
+			{
+				DOTween.To(GetBlendX, SetBlendX, se.BlendXTo, se.DurationTime);
+				DOTween.To(GetBlendY, SetBlendY, se.BlendYTo, se.DurationTime);
+			}, se.TriggerTime + lastTime);
+		}
+
+		// x3
+		foreach (StageEvent se in GlovelSetting.Instance.StageEvents)
+		{
+			ScheduleHelper.Instance.DelayDo(() =>
+			{
+				DOTween.To(GetBlendX, SetBlendX, se.BlendXTo, se.DurationTime);
+				DOTween.To(GetBlendY, SetBlendY, se.BlendYTo, se.DurationTime);
+			}, se.TriggerTime + lastTime*2);
 		}
 
 		StageGround.ScrollStart();

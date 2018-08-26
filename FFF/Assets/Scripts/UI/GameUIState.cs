@@ -17,9 +17,14 @@ public class GameUIState : MonoBehaviour
     public Text TextTitle = null;
     //===========================================================
     public GameObject EndGroup = null;
+    //===========================================================
+    public AudioSource AudioSourceBGM = null;
+    public AudioClip[] AudioClipsBGM;
 
     void Start()
     {
+        GetAudioSourceBGM();
+
         GlobelEvents.Instance.Initialize.AddListener(Initialize);
         GlobelEvents.Instance.GameStart.AddListener(GameStart);
         GlobelEvents.Instance.BackToTitle.AddListener(BackToTitle);
@@ -28,6 +33,15 @@ public class GameUIState : MonoBehaviour
         EventTriggerListener.Get(GameObjectButtonStart).onClick += ClickStart;
 
         GlobelEvents.Instance.Initialize.Invoke();
+    }
+
+    public void GetAudioSourceBGM()
+    {
+        GameObject gamesystem = GameObject.Find("GameSystem");
+        if (gamesystem != null)
+        {
+            AudioSourceBGM = gamesystem.GetComponent<AudioSource>();
+        }
     }
 
     public void ClickStart(GameObject click)
@@ -41,6 +55,8 @@ public class GameUIState : MonoBehaviour
         GameGroup.SetActive(false);
         StartGroup.SetActive(true);
         EndGroup.SetActive(false);
+
+        PlayBGM(0);
     }
 
     public void GameStart()
@@ -52,12 +68,13 @@ public class GameUIState : MonoBehaviour
         ImageTitle.DOFade(0, 0.5f).OnComplete(() =>
         {
             StartGroup.SetActive(false);
+            PlayBGM(1);
         });
         ImageButtonStart.DOFade(0, 0.5f);
         TextButtonStart.DOFade(0, 0.5f);
         TextTitle.DOFade(0, 0.5f);
 
-		ScheduleHelper.Instance.DelayDo(StageManager.Instance.Go, 1f);
+        ScheduleHelper.Instance.DelayDo(StageManager.Instance.Go, 1f);
     }
 
     public void BackToTitle()
@@ -72,6 +89,8 @@ public class GameUIState : MonoBehaviour
         TextTitle.color = Color.white;
 
         EndGroup.SetActive(false);
+
+        PlayBGM(0);
     }
 
     public void GameOver()
@@ -80,5 +99,16 @@ public class GameUIState : MonoBehaviour
         GameGroup.SetActive(false);
         StartGroup.SetActive(false);
         EndGroup.SetActive(true);
+    }
+
+    public void PlayBGM(int index)
+    {
+        if (AudioSourceBGM == null)
+        {
+            return;
+        }
+
+        AudioSourceBGM.clip = AudioClipsBGM[index];
+        AudioSourceBGM.Play();
     }
 }

@@ -1294,6 +1294,10 @@ MonoBehaviour:
   TextButtonStart: {fileID: 1184911349}
   TextTitle: {fileID: 1973499829}
   EndGroup: {fileID: 22474384}
+  AudioSourceBGM: {fileID: 0}
+  AudioClipsBGM:
+  - {fileID: 8300000, guid: e308bbd4ce1564290b44ffe6996338ff, type: 3}
+  - {fileID: 8300000, guid: 787ba84ac5c324375a76bbe5eb1ab9ef, type: 3}
 --- !u!4 &1942358817
 Transform:
   m_ObjectHideFlags: 0

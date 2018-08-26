@@ -4,14 +4,6 @@ using System;
 using UnityEngine.Events;
 
 
-
-public class DmamageImmune : Item
-{
-	public override void Excute(CharRoot cr)
-	{
-	}
-}
-
 public abstract class Item : MonoBehaviour
 {
 	public UnityEvent OnTrigger;

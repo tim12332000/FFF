@@ -3,11 +3,10 @@ using System.Collections;
 
 public class SpeedItem : Item
 {
-	public float duration;
-	public float SpeedChangeTo;
+	public float SpdOff;
 
 	public override void Excute(CharRoot cr)
 	{
-
+		StageManager.Instance.ChangeSpeed(SpdOff);
 	}
 }

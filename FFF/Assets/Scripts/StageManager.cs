@@ -55,6 +55,12 @@ public class StageManager : MonoBehaviour
 
 	public bool _stopUpdateSpd = false;
 
+	public void ChangeSpeed(float spdOff)
+	{
+		float newSpd = GetSpeed() + spdOff;
+		SetSpeed(newSpd);
+	}
+
 	public void OnGameWin()
 	{
 		_stopUpdateSpd = true;
@@ -76,7 +82,7 @@ public class StageManager : MonoBehaviour
 		if (_stopUpdateSpd)
 			return;
 
-		float newSpd = GetSpeed() + Time.deltaTime * - GlovelSetting.Instance.AddSpeedofTime;
+		float newSpd = GetSpeed() + Time.deltaTime * -GlovelSetting.Instance.AddSpeedofTime;
 		SetSpeed(newSpd);
 
 		_newSpd = newSpd;

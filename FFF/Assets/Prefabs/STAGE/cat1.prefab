@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4106423828691754}
   - component: {fileID: 212483459666526920}
   - component: {fileID: 65082251444113054}
+  - component: {fileID: 114198172413042880}
   m_Layer: 0
   m_Name: cat1
   m_TagString: Obstacle
@@ -53,6 +54,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &114198172413042880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1517709728281154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78797772a24045b4acf0adf28567706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  DamageVal: 1
 --- !u!212 &212483459666526920
 SpriteRenderer:
   m_ObjectHideFlags: 1

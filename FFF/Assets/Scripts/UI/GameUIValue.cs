@@ -19,6 +19,7 @@ public class GameUIValue : SingletonMono<GameUIValue>
                 return;
             }
 
+            Debug.Log(ImagesLife);
             life = value;
             for (int i = 0; i < ImagesLife.Length; i++)
             {
@@ -74,7 +75,7 @@ public class GameUIValue : SingletonMono<GameUIValue>
     {
 
     }
-    
+
     void Update()
     {
         /*

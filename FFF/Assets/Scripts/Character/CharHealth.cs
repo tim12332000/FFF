@@ -2,70 +2,84 @@
 using System.Collections;
 using System;
 using UnityEngine.Events;
+using Gameplay.Utility;
 
 public class CharHealth : MonoBehaviour
 {
-	public event Action OnHpZero = delegate { };
-	public UnityEvent OnDamage;
-	public UnityEvent OnHeal;
+    public event Action OnHpZero = delegate { };
+    public UnityEvent OnDamage;
+    public UnityEvent OnHeal;
 
-	public int HpMax = 3;
+    public int HpMax = 3;
 
-	[SerializeField]
-	private int _hp;
-	public int Hp
-	{
-		get
-		{
-			return _hp;
-		}
-		set
-		{
-			_hp = Hp;
-		}
-	}
+    [SerializeField]
+    private int _hp;
+    public int Hp
+    {
+        get
+        {
+            return _hp;
+        }
+        set
+        {
+            _hp = Hp;
+        }
+    }
 
-	[ContextMenu("TestDmage")]
-	public void TestDmage()
-	{
-		TakeDamage(1);
-	}
-	[ContextMenu("TestHeal")]
-	public void TestHeal()
-	{
-		TakeHeal(1);
-	}
+    public bool IsInvincible = false;
 
-	public void TakeDamage(int damage)
-	{
-		_hp -= damage;
+    [ContextMenu("TestDmage")]
+    public void TestDmage()
+    {
+        TakeDamage(1);
+    }
+    [ContextMenu("TestHeal")]
+    public void TestHeal()
+    {
+        TakeHeal(1);
+    }
 
-		if (_hp < 0)
-		{
-			_hp = 0;
-			OnHpZero();
-		}
+    public void TakeDamage(int damage)
+    {
+        if (IsInvincible)
+        {
+            return;
+        }
 
-		GameUIValue.Instance.Life = _hp;
+        _hp -= damage;
 
-		OnDamage.Invoke();
-	}
+        if (_hp < 0)
+        {
+            _hp = 0;
+            OnHpZero();
+        }
 
-	public void TakeHeal(int heal)
-	{
-		_hp += heal;
-		if (_hp >= HpMax)
-		{
-			_hp = HpMax;
-		}
+        GameUIValue.Instance.Life = _hp;
 
-		GameUIValue.Instance.Life = _hp;
+        OnDamage.Invoke();
+    }
 
-		OnHeal.Invoke();
-	}
+    public void TakeHeal(int heal)
+    {
+        _hp += heal;
+        if (_hp >= HpMax)
+        {
+            _hp = HpMax;
+        }
 
-	private void Awake()
-	{
-		_hp = HpMax;
-	}
+        GameUIValue.Instance.Life = _hp;
+
+        OnHeal.Invoke();
+    }
+
+    public void TakeInvincible()
+    {
+        IsInvincible = true;
+		//ScheduleHelper.Instance.DelayDo(,3);
+    }
+
+    private void Awake()
+    {
+        _hp = HpMax;
+    }
 }

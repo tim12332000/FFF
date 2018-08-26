@@ -65,7 +65,8 @@ public class GameUIState : MonoBehaviour
 
     public void ClickRestart(GameObject click)
     {
-        GlobelEvents.Instance.BackToTitle.Invoke();
+		GlobelEvents.Instance.GameReStart.Invoke();
+		GlobelEvents.Instance.BackToTitle.Invoke();
     }
 
     public void Initialize()

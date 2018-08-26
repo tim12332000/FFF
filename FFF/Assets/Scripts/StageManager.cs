@@ -52,7 +52,7 @@ public class StageManager : MonoBehaviour
 
 	private float _nowS;
 	public float NewSpd;
-	private bool _gameOver;
+	private bool _gameOver = true;
 
 	public bool _stopUpdateSpd = false;
 
@@ -73,6 +73,8 @@ public class StageManager : MonoBehaviour
 	{
 		_stopUpdateSpd = false;
 		_gameOver = false;
+		_nowS = 0;
+		NewSpd = 0;
 		SetSpeed(GlovelSetting.Instance.OrignalSpd);
 	}
 
@@ -113,6 +115,7 @@ public class StageManager : MonoBehaviour
 	{
 		Debug.LogError("go");
 
+		_gameOver = false;
 		_nowS = 0;
 		NewSpd = 0;
 

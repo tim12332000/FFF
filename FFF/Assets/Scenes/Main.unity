@@ -233,7 +233,7 @@ MonoBehaviour:
     BlendYTo: 0.6
     DurationTime: 0.2
   IsEnterGame: 0
-  GameWinS: 3000
+  GameWinS: 200
   OrignalSpd: -20
   AddSpeedofTime: 1
 --- !u!114 &458987036

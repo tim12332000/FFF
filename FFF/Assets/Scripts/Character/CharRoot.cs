@@ -8,6 +8,12 @@ public class CharRoot : MonoBehaviour
 	public CharMovment CharMovment;
 	public CharHealth CharHealth;
 
+	[SerializeField]
+	private Animator RunningAnim;
+
+	[SerializeField]
+	private float _animSpeed;
+
 	public void Init()
 	{
 		CharHealth.OnDamage.AddListener(OnDamage);
@@ -32,7 +38,16 @@ public class CharRoot : MonoBehaviour
 
 	private void OnHpZero()
 	{
-		//TODO DEAD
+		GlobelEvents.Instance.GameOver.Invoke();
+	}
+
+	private void Update()
+	{
+		if (GlovelSetting.Instance.IsEnterGame == false)
+			return;
+
+		_animSpeed = (-1 * StageManager.Instance.GetSpeed()) / 20;
+		RunningAnim.speed = _animSpeed;
 	}
 
 	private void Awake()

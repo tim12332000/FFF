@@ -232,6 +232,8 @@ MonoBehaviour:
     BlendXTo: 5
     BlendYTo: 0.6
     DurationTime: 0.2
+  OrignalSpd: -20
+  AddSpeedofTime: 1
 --- !u!114 &458987036
 MonoBehaviour:
   m_ObjectHideFlags: 0

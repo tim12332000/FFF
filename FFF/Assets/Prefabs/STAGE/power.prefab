@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4020829916360238}
   - component: {fileID: 212713621162184678}
   - component: {fileID: 65435224164200370}
+  - component: {fileID: 114064772636931558}
   m_Layer: 0
   m_Name: power
   m_TagString: Obstacle
@@ -53,6 +54,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &114064772636931558
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1052403170443708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33db9b1c75cc11b468343aaad9099ddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!212 &212713621162184678
 SpriteRenderer:
   m_ObjectHideFlags: 1
